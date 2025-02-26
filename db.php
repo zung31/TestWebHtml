@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
-$dbname = 'webhtml';
+$dbname = ''; // your database name
 $username = 'root';
-$password = '_Hoangdung3107';
+$password = ''; // your database password
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
