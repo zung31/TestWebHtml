@@ -7,13 +7,15 @@ $data = json_decode(file_get_contents('php://input'), true);
 $productId = $data['id'];
 $intitule = $data['intitule'];
 $descriptif = $data['descriptif'];
+$modified = date('Y-m-d H:i:s');
 
 try {
-    $query = "UPDATE produits SET intitule = :intitule, descriptif = :descriptif WHERE id = :id";
+    $query = "UPDATE produits SET intitule = :intitule, descriptif = :descriptif, modified = :modified WHERE id = :id";
     $stmt = $pdo->prepare($query);
     $stmt->execute([
         ':intitule' => $intitule,
         ':descriptif' => $descriptif,
+        ':modified' => $modified,
         ':id' => $productId,
     ]);
 
