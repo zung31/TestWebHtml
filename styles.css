@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('assets/img1.jpg'); /* Thêm lớp mờ */
+    background-size: cover; /* Để hình ảnh phủ kín toàn bộ nền */
+    background-position: center; /* Để hình ảnh căn giữa */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #333;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.header h2 {
+    color: #555;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.search-bar input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.add-category {
+    display: flex;
+    gap: 10px;
+}
+
+.add-category input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.add-category button {
+    width: 30%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.add-category button:hover {
+    background-color: #218838;
+}
+
+.category-card {
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.category-card:hover {
+    transform: scale(1.05);
+}
+.product-card {
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #f1fcf4;
+}
+
+.sous-category {
+    margin-left: 20px;
+    margin-top: 10px;
+    display: none; 
+}
+.add-sous-category-input {
+    margin-top: 10px;
+    display: none;
+}
