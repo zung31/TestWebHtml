@@ -1,9 +1,11 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    background-image: url('assets/img1.jpg'); /* Thêm lớp mờ */
-    background-size: cover; /* Để hình ảnh phủ kín toàn bộ nền */
-    background-position: center; /* Để hình ảnh căn giữa */
+    background-image: url('assets/img2.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat !important; 
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     display: flex;
